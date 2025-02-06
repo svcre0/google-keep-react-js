@@ -1,0 +1,75 @@
+.notes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  color: rgb(92, 92, 92);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.note {
+  background-color: white;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #e0e1e0;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  color: rgb(100, 100, 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-height: 400px;
+}
+
+.note:hover {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.note .title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.note .text {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.note .note-footer {
+  margin-top: 15px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  visibility: hidden;
+  color: black;
+}
+
+.note-footer .material-symbols-outlined {
+  color: black;
+  font-size: .9rem;
+}
+
+.note .check-circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  visibility: hidden;
+}
+
+.delete-note {
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
